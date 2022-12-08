@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./front-Bootstrap/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header section -->
+    <nav class="navbar navbar-expand-lg bg-light position-fixed w-100 top-0" style="z-index: 99;">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="./front-Bootstrap/logo.svg" class="img-fluid" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link me-3 active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Company
+                          <i class="fa-solid fa-angle-down ms-1 opacity-75"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#">Customer Stories</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="#">Careers Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Hire Us</a></li>
+                            <li><a class="dropdown-item" href="#">Pricing</a></li>
+                            <li><a class="dropdown-item" href="#">Contacts: Agency</a></li>
+                            <li><a class="dropdown-item" href="#">Contacts: Startup</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Account
+                          <i class="fa-solid fa-angle-down ms-1 opacity-75"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Authentication</a></li>
+                            <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                            <li><a class="dropdown-item" href="#">Security</a></li>
+                            <li><a class="dropdown-item" href="#">Notifications</a></li>
+                            <li><a class="dropdown-item" href="#">Preferences</a></li>
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+                            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Payments</a></li>
+                            <li><a class="dropdown-item" href="#">Address</a></li>
+                            <li><a class="dropdown-item" href="#">Teams</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pages
+                          <i class="fa-solid fa-angle-down ms-1 opacity-75"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Term & Conditions</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy & Policy</a></li>
+                            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                            <li><a class="dropdown-item" href="#">Coming Soon: Simple</a></li>
+                            <li><a class="dropdown-item" href="#">Maintenance Mode</a></li>
+                            <li><a class="dropdown-item" href="#">Status</a></li>
+                            <li><a class="dropdown-item" href="#">Invoice</a></li>
+                            <li><a class="dropdown-item" href="#">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog
+                          <i class="fa-solid fa-angle-down ms-1 opacity-75"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Journal</a></li>
+                            <li><a class="dropdown-item" href="#">Metro</a></li>
+                            <li><a class="dropdown-item" href="#">Newsroom</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Articles</a></li>
+                            <li><a class="dropdown-item" href="#">Author Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Porfolio
+                          <i class="fa-solid fa-angle-down ms-1 opacity-75"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Grid</a></li>
+                            <li><a class="dropdown-item" href="#">Product Article</a></li>
+                            <li><a class="dropdown-item" href="#">Case Studies: Branding</a></li>
+                            <li><a class="dropdown-item" href="#">Case Studies: Product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section style="margin-top: 70px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-12 mt-5 text-md-start text-center" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold">Turn your ideas into a <span class="text-primary">startup.</span></h1>
+                    <p class="lead">Front's feature-rich designed demo pages help you create the best possible product.</p>
+                    <div>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                        <a href="#" class="btn btn-link text-primary text-decoration-none">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-7 d-md-block d-none" data-aos="fade-left">
+                    <img src="./front-Bootstrap/bg.jpg" class="img-fluid" style="clip-path: polygon(21% 0, 100% 0, 100% 50%, 69% 78%, 0 41%);" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="h2 mx-auto mb-3 w-100">Learn to develop sites with components and design systems</h1>
+                <div class="d-flex justify-content-center flex-wrap" data-aos="zoom-in">
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>Asynchronous collaboration</span>
+                    </div>
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>Updates and announcements</span>
+                    </div>
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>Training and team building</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 g-4">
+                <div class="col-md col-12" data-aos="zoom-in">
+                    <div class="card border-0 bg-light p-2">
+                        <img src="./front-Bootstrap/img1.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Front App</h3>
+                            <p class="card-text opacity-50">Front App is an easier way to search on Android.</p>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Advanced Analytics</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Digital Marketing</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Organization</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-link text-primary text-decoration-none">
+                                Learn more 
+                                <i class="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-12" data-aos="zoom-in">
+                    <div class="card border-0 bg-light p-2">
+                        <img src="./front-Bootstrap/img2.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Front Chat</h3>
+                            <p class="card-text opacity-50">Front App is an easier way to search on Android.</p>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Cost Transformation</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Customer Experience</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Mergers and Acquisitions</span>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <button class="btn btn-link text-primary text-decoration-none">
+                                    Learn more 
+                                    <i class="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-12" data-aos="zoom-in">
+                    <div class="card border-0 bg-light p-2">
+                        <img src="./front-Bootstrap/img3.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h3 class="card-title">Front Calendar</h3>
+                            <p class="card-text opacity-50">Front App is an easier way to search on Android.</p>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Enterprise Technology</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Private Equity</span>
+                                </li>
+                                <li class="list-group-item border-0 p-1 opacity-75">
+                                    <i class="fa-solid fa-chevron-right fa-xs me-2"></i>
+                                    <span>Sustainability</span>
+                                </li>
+                            </ul>
+                            <a href="#">
+                                <button class="btn btn-link text-primary text-decoration-none">
+                                    Learn more 
+                                    <i class="fa-solid fa-chevron-right fa-xs ms-2"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="h2 mb-1" data-aos="zoom-in">Wow your audience from the first second</h1>
+                <p class="lead mb-4">The powerful and flexible theme for all kinks of businesses</p>
+                <div class="d-flex justify-content-center flex-wrap" data-aos="zoom-in">
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>5-star support</span>
+                    </div>
+                    <div class="mx-3">
+                        <i class="fa-solid fa-check me-1 text-primary"></i>
+                        <span>Constant updates</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 g-4">
+                <div class="col-md col-12" data-aos="fade-right">
+                    <div class="shadow">
+                        <img src="./front-Bootstrap/img6.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md col-12" data-aos="fade-left">
+                    <div>
+                        <h1 class="h2">Collaborative tools to design user experience</h1>
+                        <p class="lead">We help businesses bring ideas to life in the digital world, by designing and implementing technology tools that they need <br class="d-md-block d-none"> to win.</p>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item border-0 p-1 opacity-75">
+                                <i class="fa-solid fa-check text-primary fa-xs me-2"></i>
+                                <span>Less routine - more creativity</span>
+                            </li>
+                            <li class="list-group-item border-0 p-1 opacity-75">
+                                <i class="fa-solid fa-check text-primary fa-xs me-2"></i>
+                                <span>Hundreds of thousands saved</span>
+                            </li>
+                            <li class="list-group-item border-0 p-1 opacity-75">
+                                <i class="fa-solid fa-check text-primary fa-xs me-2"></i>
+                                <span>Scale budgets efficiently</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                    <div class="py-5">
+                        <p class="lead">Trusted by leading companies</p>
+                        <div class="row">
+                            <div class="col"><img src="./front-Bootstrap/fitbit-dark.svg" class="img-fluid w-75" alt=""></div>
+                            <div class="col"><img src="./front-Bootstrap/forbes-dark.svg" class="img-fluid w-75" alt=""></div>
+                            <div class="col"><img src="./front-Bootstrap/mailchimp-dark.svg" class="img-fluid w-75" alt=""></div>
+                            <div class="col"><img src="./front-Bootstrap/layar-dark.svg" class="img-fluid w-75" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5 col-12 text-center" data-aos="fade-right">
+                    <img src="./front-Bootstrap/img31.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-7 col-12 d-flex flex-column justify-content-center" data-aos="fade-left">
+                    <img src="./front-Bootstrap/mailchimp-dark.svg" alt="" class="img-fluid w-25 mb-3">
+                    <blockquote class="h2 fw-normal"><i class="fa-solid fa-quote-left me-3"></i>I'm absolutely floored by the level of care and attention to detail the team at Htmlstream have put into this theme and for one can guarantee that I will be a return customer.<i class="fa-solid fa-quote-right ms-3"></i></blockquote>
+                    <div class="mt-4">
+                        <h3 class="mb-0">Lewis</h3>
+                        <p class="lead">Senior Director of Operations at Mailchimp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3 bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div>
+                        <i class="fa-solid fa-arrow-down h3 me-2 text-danger"></i>
+                        <span class="display-5 fw-bold">47%</span>
+                    </div>
+                    <p class="lead w-75 mx-auto mt-2">fewer meetings across organizations</p>
+                </div>
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div>
+                        <i class="fa-solid fa-arrow-up h3 me-2 text-success"></i>
+                        <span class="display-5 fw-bold">23%</span>
+                    </div>
+                    <p class="lead w-75 mx-auto mt-2">increase in traffic on webpages with Looms</p>
+                </div>
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div>
+                        <i class="fa-solid fa-arrow-up h3 me-2 text-success"></i>
+                        <span class="display-5 fw-bold">9.3%</span>
+                    </div>
+                    <p class="lead w-75 mx-auto mt-2">boost in reply rates across sales outreach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-md-5 py-3">
+        <div class="container">
+            <h1 class="h2 text-center mb-3" data-aos="zoom-in">Discover more</h1>
+            <div class="row mt-3 g-4">
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div class="card border-0">
+                        <img src="./front-Bootstrap/img33.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <p class="mb-0">READ THE BLOG</p>
+                            <h4 class="card-title">Have a meaningful impact</h4>
+                            <p class="card-text opacity-50">Opportunities to Front who have proven to be good at executing on them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div class="card border-0">
+                        <img src="./front-Bootstrap/img34.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <p class="mb-0">READ THE BLOG</p>
+                            <h4 class="card-title">Documentation</h4>
+                            <p class="card-text opacity-50">Whether you're a startup or a global enterprise, learn how to integrate with Front.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-12" data-aos="fade-up">
+                    <div class="card border-0">
+                        <img src="./front-Bootstrap/img35.jpg" alt="" class="card-img img-fluid">
+                        <div class="card-body">
+                            <p class="mb-0">READ THE BLOG</p>
+                            <h4 class="card-title">Explore the Snippets tool</h4>
+                            <p class="card-text opacity-50">Quickly Front sample components, copy paste codes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p class="btn btn-outline-light text-black rounded-pill">Want to read more? <a href="#" class="text-primary text-decoration-none ms-md-4 ms-1">Go here <i class="fa-solid fa-chevron-right ms-md-2 ms-1"></i></a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-md-5 pt-3 pb-2 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 col-12" data-aos="zoom-in">
+                    <img src="./front-Bootstrap/logo.svg" alt="" class="img-fluid mb-3">
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-location me-2"></i><span>153 Williamson Plaza, Maggieberg</span></li>
+                        <li class="list-group-item border-0 bg-transparent"><i class="fa-solid fa-phone me-2"></i><span>+1 (062) 109-9222</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12" data-aos="zoom-in">
+                    <h4>Company</h4>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">Careers</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent"> 
+                            <a href="#" class="nav-link">
+                                Customers
+                                <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                            </a>
+                    </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">Hire us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12" data-aos="zoom-in">
+                       <h4>Features</h4>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">
+                                    Press
+                                    <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Release Notes</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Integrations
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Pricing</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-12" data-aos="zoom-in">
+                       <h4>Documentation</h4>
+                        <ul class="list-group mt-3">
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Support</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Docs</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Status</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">API Reference</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#" class="nav-link">Tech Requirements</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-md-2 col-12" data-aos="zoom-in">
+                    <h4>Resources</h4>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-question-circle me-2"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 bg-transparent">
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-user-circle me-2"></i>
+                                <span>Your Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="my-5 flex-md-row flex-column" style="display: flex;align-items: center;justify-content: space-between" data-aos="zoom-in">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black">Privacy & Policy</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-black">Terms</a></li>
+                      <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none text-black">Site Map</a></li>
+                    </ol>
+                </nav>
+                <div>
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item border-0 px-2 py-1 bg-white mx-1">
+                            <a href="#" class="nav-link text-primary">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 px-2 py-1 bg-white mx-1">
+                            <a href="#" class="nav-link text-primary">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 px-2 py-1 bg-white mx-1">
+                            <a href="#" class="nav-link text-primary">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item border-0 px-2 py-1 bg-white mx-1">
+                            <a href="#" class="nav-link text-primary">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>English(US)</option>
+                            <option value="1">Spain</option>
+                            <option value="2">Japanese</option>
+                            <option value="3">Korean</option>
+                          </select>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center" data-aos="zoom-in">
+                <p class="lead">&copy; Front 2022 Htmlstream. All rights reserved.</p>
+                <p class="opacity-50">When you visit or interact with our sites, services or tools, wr or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
